@@ -1,0 +1,85 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#root {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.hero-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.compare {
+  margin: 20px 0;
+  border-top: 1px solid;
+  font-size: 30px;
+  color: #282c34;
+}
+
+.main-container {
+  border: 1px solid rgb(20, 220, 203);
+  padding: 20px;
+  background: #282c34;
+  color: darkgrey;
+  font-size: 16px;
+  display: grid;
+  place-content: center;
+}
+
+.user-img {
+  padding: 10px 0;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: 200px 200px 200px #fff;
+}
+
+.btn-div {
+  text-align: center;
+  margin: 5px 0;
+}
+
+.compare-btn {
+  background: transparent;
+  border: 1px solid rgb(235, 61, 96);
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: darkgrey;
+  cursor: pointer;
+  outline: none;
+}
