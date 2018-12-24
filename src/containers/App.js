@@ -17,10 +17,16 @@ class App extends Component{
 
   handleClick = (e) => {
     let id = e.target.id;
-    console.log(id);
+    let validId;
+    if (this.state.comapareData.includes(this.state.userData[id])) {return}
+    else {validId = [...this.state.comapareData, this.state.userData[id]]}
+
     this.setState({
-      comapareData: [...this.state.comapareData, this.state.userData[id]]
+      comapareData: validId
     })
+    
+    let data = document.querySelector('.table-data');
+    data.style.display = "grid";
   }
 
   handleDelete = (e) => {
@@ -37,7 +43,16 @@ class App extends Component{
       <React.Fragment>
         <UserInfo user={this.state.userData} click={this.handleClick} />
         <div className="compare">Compare User</div>
-        <CompareUser user={this.state.comapareData} click={this.handleDelete} />
+        <div className="table-data"> 
+          <div className="table-body">
+            <div className="user-tr">Name: </div>
+            <div className="user-tr">Public Repos: </div>
+            <div className="user-tr">Followers: </div>
+          </div>  
+          <div>
+            <CompareUser user={this.state.comapareData} click={this.handleDelete} />
+          </div>
+        </div>
       </React.Fragment>
     )
   }

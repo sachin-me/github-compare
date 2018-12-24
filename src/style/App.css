@@ -83,3 +83,23 @@
   cursor: pointer;
   outline: none;
 }
+
+.table-data {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  display: none;
+}
+
+.user-tr {
+  border: 1px solid crimson;
+  padding: 5px;
+}
+
+.table-body tr {
+  border-bottom: 1px solid;
+}
+
+.compare-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+}
