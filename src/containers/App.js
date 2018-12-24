@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../style/App.css';
+import '../style/App.scss';
 import UserInfo from "../components/UserInfo";
 import CompareUser from "../components/CompareUser"
 
@@ -24,7 +24,7 @@ class App extends Component{
     this.setState({
       comapareData: validId
     })
-    
+
     let data = document.querySelector('.table-data');
     data.style.display = "grid";
   }

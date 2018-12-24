@@ -12,8 +12,8 @@ export default function CompareUser(props) {
               <div className="user-tr">{v.name}</div>
               <div className="user-tr">{v.public_repos}</div>
               <div className="user-tr">{v.followers}</div>
-              <div className="btn-div">
-                <button id={i} className="compare-btn" onClick={props.click}>Remove</button>
+              <div className="compare-btn-div">
+                <button id={i} className="compare-remove-btn" onClick={props.click}>X</button>
               </div>
             </div>
           )

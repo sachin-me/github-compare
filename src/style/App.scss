@@ -102,4 +102,27 @@
 .compare-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 200px);
+  position: relative;
+  &:hover {
+    .compare-remove-btn {
+      display: inline-block;
+    }
+  }
+}
+
+.compare-btn-div {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.compare-remove-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px;
+  color: crimson;
+  outline: none;
+  display: none;
 }
