@@ -8,7 +8,7 @@ export default function CompareUser(props) {
       {
         user && user.map((v, i) => {
           return (
-            <div key={i}>
+            <div key={i} className="main-div">
               <div className="user-tr">{v.name}</div>
               <div className="user-tr">{v.public_repos}</div>
               <div className="user-tr">{v.followers}</div>

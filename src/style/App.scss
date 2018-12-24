@@ -102,6 +102,9 @@
 .compare-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 200px);
+}
+
+.main-div {
   position: relative;
   &:hover {
     .compare-remove-btn {
